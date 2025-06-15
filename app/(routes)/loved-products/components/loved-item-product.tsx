@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+
 
 import { Button } from "@/components/ui/button";
 import ProductImageMiniature from "@/components/ui/shared/product-image-miniature";
@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils";
 import { ProductType } from "@/types/product";
 import { X } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useCallback } from "react";
 
 interface LovedItemProductProps {
     product: ProductType
@@ -18,7 +17,6 @@ interface LovedItemProductProps {
 
 const LovedItemProduct = (props: LovedItemProductProps) => {
     const { product } = props
-    const router = useRouter()
     const { removeLovedItem } = UseLovedProducts()
     const { addItem } = useCart()
 

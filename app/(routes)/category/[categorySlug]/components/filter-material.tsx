@@ -1,6 +1,6 @@
 import { useGetProductField } from "@/api/getProductField";
 import { Label } from "@/components/ui/label";
-import { FilterTypes, ResultFilterTypes } from "@/types/filters";
+import { FilterTypes } from "@/types/filters";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 type FilterMaterialProps = {

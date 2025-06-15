@@ -14,7 +14,7 @@ export type InfoProductProps = {
 const InfoProduct = (props: InfoProductProps) => {
     const { product } = props
     const { addItem } = useCart()
-    const { addLoveItem, lovedItems } = UseLovedProducts()
+    const { addLoveItem } = UseLovedProducts()
 
     
 
