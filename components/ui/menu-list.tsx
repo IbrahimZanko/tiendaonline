@@ -19,6 +19,8 @@ navigationMenuTriggerStyle,
 
 
 const MenuList = () => {
+
+
     return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -70,12 +72,12 @@ const MenuList = () => {
             </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-            <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Accesorios
-            </NavigationMenuLink>
-            </Link>
-        </NavigationMenuItem>
+        <Link href="/" legacyBehavior passHref>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+          <a>Accesorios</a>
+          </NavigationMenuLink>
+      </Link>
+</NavigationMenuItem>
         </NavigationMenuList>
     </NavigationMenu>
     )
