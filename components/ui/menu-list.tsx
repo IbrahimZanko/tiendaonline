@@ -1,6 +1,7 @@
 "use client"
 
 
+
 import * as React from "react"
 import Link from "next/link"
 
@@ -40,10 +41,10 @@ const MenuList = () => {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/" title="Tienda">
+              <ListItem href="/shop" title="Tienda">
                 Accede a tu informacion, pedidos y mucho más.
               </ListItem>
-              <ListItem href="/" title="Ofertas">
+              <ListItem href="/offers" title="Ofertas">
                 Sección dedicada a promociones y descuentos especiales.
               </ListItem>
               <ListItem href="/" title="Accesorios">
@@ -69,13 +70,11 @@ const MenuList = () => {
             </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-            <NavigationMenuLink
-                asChild
-                className={navigationMenuTriggerStyle()}
-                >
-                  <Link href="/">Accesorios</Link>
+            <Link href="/accesorios" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Accesorios
             </NavigationMenuLink>
-            
+            </Link>
         </NavigationMenuItem>
         </NavigationMenuList>
     </NavigationMenu>
