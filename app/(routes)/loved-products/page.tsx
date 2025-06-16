@@ -19,8 +19,8 @@ export default function Page() {
                         <p>No hay productos en la seccion de favoritos</p>
                     )}
                     <ul>
-                        {lovedItems.map((item) => (
-                            <LovedItemProduct key={item.id} product={item} />
+                        {(lovedItems ?? []).map((item) => (
+                        <LovedItemProduct key={item.id} product=                    {item} />
                         ))}
                     </ul>
                 </div>

@@ -30,7 +30,7 @@ const FeaturedProducts = () => {
                 <SkeletonScheme grid={3} />
             )} 
             {result !== null && (
-                result.map((product: ProductType) => {
+                result((product: ProductType) => {
                     const { attributes, id } = product;
                     const { slug, images, productName } = attributes;
                     return (
