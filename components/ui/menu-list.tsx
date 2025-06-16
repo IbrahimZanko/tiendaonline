@@ -72,11 +72,11 @@ const MenuList = () => {
             </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-        <Link href="/" legacyBehavior passHref>
-          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <a>Accesorios</a>
-          </NavigationMenuLink>
-      </Link>
+  <NavigationMenuLink asChild>
+    <Link href="/" className={navigationMenuTriggerStyle()}>
+      Accesorios
+    </Link>
+  </NavigationMenuLink>
 </NavigationMenuItem>
         </NavigationMenuList>
     </NavigationMenu>
