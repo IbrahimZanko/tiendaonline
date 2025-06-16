@@ -41,10 +41,10 @@ const MenuList = () => {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/shop" title="Tienda">
+              <ListItem href="/" title="Tienda">
                 Accede a tu informacion, pedidos y mucho más.
               </ListItem>
-              <ListItem href="/offers" title="Ofertas">
+              <ListItem href="/" title="Ofertas">
                 Sección dedicada a promociones y descuentos especiales.
               </ListItem>
               <ListItem href="/" title="Accesorios">
@@ -70,7 +70,7 @@ const MenuList = () => {
             </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-            <Link href="/accesorios" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Accesorios
             </NavigationMenuLink>
